@@ -18,15 +18,15 @@ SRCREV = "fe2c7bf4cad4641dfb6f12712755515ab15815ca"
 # updated defconfig and should be removed
 # from here
 do_configure_prepend() {
-#    kernel_configure_variable RTC_DRV_DS1307 m
-#    kernel_configure_variable MWIFIEX m
-     kernel_configure_variable IKCONFIG y
-     kernel_configure_variable IKCONFIG_PROC y
-     kernel_configure_variable PWRSEQ_SD8787 y
-     kernel_configure_variable AUFS_FS y
-     kernel_configure_variable AUFS_BRANCH_MAX_127=y
-     kernel_configure_variable AUFS_SBILIST=y
-     kernel_configure_variable AUFS_XATTR=y
-     kernel_configure_variable AUFS_BR_HFSPLUS=y
-     kernel_configure_variable AUFS_BDEV_LOOP=y
-} 
+#    kernel_configure_variable RTC_DRV_DS1307 m # -> m
+#    kernel_configure_variable MWIFIEX m # -> m
+#    kernel_configure_variable IKCONFIG y # -> m
+#    kernel_configure_variable IKCONFIG_PROC y # -> y
+#    kernel_configure_variable PWRSEQ_SD8787 y # -> y
+#    kernel_configure_variable AUFS_FS y # -> y
+#    kernel_configure_variable AUFS_BRANCH_MAX_127=y # -> y
+#    kernel_configure_variable AUFS_SBILIST=y # -> y
+#    kernel_configure_variable AUFS_XATTR=y # -> y
+#    kernel_configure_variable AUFS_BR_HFSPLUS=y # -> y
+#    kernel_configure_variable AUFS_BDEV_LOOP=y # -> y
+}
